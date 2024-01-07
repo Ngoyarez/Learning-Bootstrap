@@ -1,0 +1,353 @@
+<!-- 
+   Unordered lists - Order does not explicitly matter
+   Ordered lists - Order explicitly matter.
+   Definition List - A list of terms with their associated descriptions
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container bg-light mt-3">
+       <!-- Creating Vertcal Form Layouts -->
+       <h6>Creating vertical form Layouts</h6>
+       <form action="">
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" name="" id="inputEmail" class="form-control" placeholder="Email">
+        </div>
+
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Email</label>
+            <input type="password" name="" id="inputPassword" class="form-control" placeholder="Password">
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check">
+                <input type="checkbox" name="" id="checkRemember" class="form-check-input">
+                <label for="checkRemember" class="form-check-label">Rememeber Me</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign In</button>
+       </form>
+       <hr>
+
+       <!-- Creating horizontal form layout -->
+       <h6>Creating horizontal form layout</h6>
+       <div class="row mb-3">
+        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10"><input type="email" name="" id="inputEmail" class="form-control" placeholder="Email"></div>
+       </div>
+
+       <div class="row mb-3">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10"><input type="password" name="" id="inputPassword" class="form-control" placeholder="Password"></div>
+       </div>
+
+       <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+                <input type="checkbox" name="" id="checkRemember" class="form-check-input">
+                <label for="checkRemember" class="form-check-label">Rememeber Me</label>
+            </div>
+        </div>
+       </div>
+
+       <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+            <button type="submit" class="btn btn-primary">Sign In</button>
+        </div>
+       </div>
+       <hr>
+
+       <!-- Creating inline form layout -->
+       <h6>Creating inline form layout</h6>
+       <form action="">
+        <div class="col-auto mb-3">
+            <label for="inputEmail" class="visually-hidden">Email</label>
+            <input type="email" name="" id="inputEmail" class="form-control" placeholder="Email">
+        </div>
+
+        <div class="col-auto mb-3">
+            <label for="inputPassword" class="visually-hidden">Password</label>
+            <input type="password" name="" id="inputPassword" class="form-control" placeholder="Password">
+        </div>
+
+        <div class="col-auto mb-3">
+            <div class="form-check">
+                <input type="checkbox" name="" id="checkRemember" class="form-check-input">
+                <label for="checkRemember" class="form-check-label">Remember Me</label>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Sign In</button>
+        </div>
+       </form>
+       <hr>
+
+       <!-- Creating Responsive form layouts -->
+       <h6>Creating responsive form layouts</h6>
+       <form action="">
+       <div class="row align-items center g-3">
+        <div class="col-md-auto col-12">
+            <label for="inputEmail" class="form-label d-md-none visually-hidden">Email</label>
+            <input type="email" name="" id="inputEmail" class="form-control" placeholder="Email">
+        </div>
+
+        <div class="col-md-auto col-12">
+            <label for="inputPassword" class="form-label d-md-none visually-hidden">Password</label>
+            <input type="password" name="" id="inputPassword" class="form-control" placeholder="Password">
+        </div>
+
+        <div class="col-md-auto col-12">
+            <div class="form-check">
+                <input type="checkbox" name="" id="checkRemember" class="form-check-input">
+                <label for="checkRemember" class="form-check-label">Remember Me</label>
+            </div>
+        </div>
+
+        <div class="col-md-auto col-12">
+            <button type="submit" class="btn btn-primary">Sign In</button>
+        </div>
+       </div>
+    </form>
+    <hr>
+
+    <!-- Creating Static Forms -->
+    <h6>Creating Static Forms</h6>
+    <form action="">
+        <div class="row mb-3">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" name="" readonly  class="form-control-plaintext" id="inputEmail" value="ngoyarez@gmail.com">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" name="" class="form-control" id="inputPassword">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                    <input type="checkbox" name="" id="checkRemember" class="form-check-input">
+                    <label for="checkRemember" class="form-check-label">Remember Me</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </div>
+        </div>
+    </form>
+    <hr>
+
+    <!-- Column sizing of form controls -->
+    <h6>Column sizing of form controls </h6>
+    <div class="row g-3">
+        <div class="col-6">
+            <input type="text" name="" id="" class="form-control" placeholder="City">
+        </div>
+
+        <div class="col-4">
+            <select name="" id="" class="form-select">
+                <option value="">State</option>
+                <option value="">State</option>
+                <option value="">State</option>
+                <option value="">State</option>
+                <option value="">State</option>
+                <option value="">State</option>
+            </select>
+        </div>
+
+        <div class="col-2">
+            <input type="text" name="" id="" class="form-control" placeholder="Zip">
+        </div>
+    </div>
+    <hr>
+
+    <!-- Placing checkboxes and radio buttons inline -->
+    <h6>Placing checkboxes and radio buttons inline</h6>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="hobbies" id="checkMusic" class="form-check-input">
+                <label for="checkMusic" class="form-check-label">Music</label>
+            </div>
+
+            <div class="form-check form-check-inline ms-3">
+                <input type="checkbox" name="hobbies" id="checkTravel" class="form-check-input" checked>
+                <label for="checkTravel" class="form-check-label">Travel</label>
+            </div>
+
+            <div class="form-check form-check-inline ms-3">
+                <input type="checkbox" name="hobbies" id="checkReading" class="form-check-input" checked>
+                <label for="checkReading" class="form-check-label">Reading</label>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-check form-check-inline">
+                <input type="radio" name="gender" id="radioMale" class="form-check-input">
+                <label for="radioMale" class="form-check-label">Male</label>
+            </div>
+
+            <div class="form-check form-check-inline ms-3">
+                <input type="radio" name="gender" id="radioFemale" class="form-check-input">
+                <label for="radioFemale" class="form-check-label">Female</label>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Adding Help text to form controls -->
+    <h6>Adding Help text to form controls</h6>
+    <label for="inputPassword" class="form-label">Password</label>
+    <input type="password" name="" id="inputPassword" class="form-control">
+
+    <div class="form-text">
+        Password must be 8 - 20 characters long, contain letters, numbers and 
+        special characters, but must not contain spaces.
+    </div>
+    <br>
+
+    <!-- Using small -->
+    <div class="row align-items-center g-3">
+        <div class="col-auto">
+            <label for="" class="col-form-label">Password</label>
+        </div>
+
+        <div class="col-auto">
+            <input type="password" name="" id="" class="form-control">
+        </div>
+
+        <div class="col-auto">
+            <span class="form-text">Must be 8 - 20 characters long</span>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Creating disabled form controls -->
+    <h6>Creating disabled form controls</h6>
+    <input type="text" name="" id="" class="form-control mb-3" placeholder="Disabled Input" disabled>
+    <textarea name="" id="" cols="6" rows="6" class="form-control mb-3" placeholder="Disabled TextArea" disabled></textarea>
+    <select name="" id="" class="form-select" disabled>
+        <option value="">Disabled Select</option>
+    </select>
+    <hr>
+
+    <!-- Disabling all form controls at once -->
+    <h6>Disabling all form controls at once </h6>
+    <form action="">
+        <fieldset disabled>
+            <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10"><input type="email" name="" id="inputEmail" class="form-control" placeholder="Email"></div>
+               </div>
+        
+               <div class="row mb-3">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10"><input type="password" name="" id="inputPassword" class="form-control" placeholder="Password"></div>
+               </div>
+        
+               <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                        <input type="checkbox" name="" id="checkRemember" class="form-check-input">
+                        <label for="checkRemember" class="form-check-label">Rememeber Me</label>
+                    </div>
+                </div>
+               </div>
+        
+               <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </div>
+               </div>
+        </fieldset>
+    </form>
+    <hr>
+
+    <!-- Creating readonly inputs -->
+    <h6>Creating readonly inputs</h6>
+    <input type="text" name="" id="" class="form-control mb-2" value="This input value cannot be changed" readonly>
+    <textarea name="" id="" cols="5" rows="3" class="form-control" readonly>This textarea value cannot be changed</textarea>
+    <hr>
+
+    <!-- Height sizing of form controls -->
+    <h6>Height sizing of form controls</h6>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label-lg">Email</label>
+        <div class="col-sm-10">
+            <input type="email" name="" id="" class="form-control form-control-lg" placeholder="Large input">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" name="" id="" class="form-control" placeholder="Default input">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label-lg">Email</label>
+        <div class="col-sm-10">
+            <input type="email" name="" id="" class="form-control form-control-sm" placeholder="Small input">
+        </div>
+    </div>
+    <br>
+
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label-lg">State</label>
+        <div class="col-sm-10">
+            <select name="" id="" class="form-select form-select-lg">
+                <option value="">Large select</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">State</label>
+        <div class="col-sm-10">
+            <select name="" id="" class="form-select">
+                <option value="">Default select</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">State</label>
+        <div class="col-sm-10">
+            <select name="" id="" class="form-select form-select-sm">
+                <option value="">Small select</option>
+            </select>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+   <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
