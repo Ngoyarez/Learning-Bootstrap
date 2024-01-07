@@ -1,0 +1,166 @@
+<!-- 
+    Typography is about stylying and formating of text content like headings, paragraphs
+    , blockquotes, etc.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container bg-light mt-3">
+    <!-- Working with headings -->
+    <h6>Working with Headings</h6>
+        <h1>h1 Heading</h1>
+        <h2>h2 Heading</h2>
+        <h3>h3 Heading</h3>
+        <h4>h4 Heading</h4>
+        <h5>h5 Heading</h5>
+        <h6>h6 Heading</h6>
+        
+    <hr>
+    <!-- Customizing Headings -->
+    <h6>Customizing Heading</h6>
+    <h2>
+        Fancy display headings
+        <small class="text-muted">With faded secondary text</small>
+    </h2>
+
+    <h2>Primary Text <small class="text-secondary">Secondary Text</small></h2>
+    <hr>
+
+    <!-- Display Headings -->
+    <h6>Display Headings</h6>
+        <h1 class="display-1">h1 Heading</h1>
+        <h2 class="display-2">h2 Heading</h2>
+        <h3 class="display-3">h3 Heading</h3>
+        <h4 class="display-4">h4 Heading</h4>
+        <h5 class="display-5">h5 Heading</h5>
+        <h6 class="display-6">h6 Heading</h6>
+    <hr>
+
+    <!-- Working with paragraphs -->
+    <h6>Working with paragraphs</h6>
+    <p>This is how normal text look like in bootstrap</p>
+
+    <p class="lead">
+        This is how a paragraph stands out in Bootstrap. 
+    </p>
+    <br>
+    <p>Bootstrap's global default font-size is 1rem(16px), with a line-height of 1.5(24px)
+        which is applied to the body elements as well as all the paragraphs.
+        In addition, margin-bottom of 1rem is also applied to all the paragraphs <br>
+        1rem - root em which is equal to the font-size of the root element(html)
+        which is 16px by default in most browsers
+    </p>
+    <hr>
+
+    <!-- Text Alignment -->
+    <h6>Text Alignment</h6>
+    <p class="text-start">Left aligned text on all viewport sizes</p>
+    <p class="text-center">Center aligned text on all viewport sizes</p>
+    <p class="text-end">Right aligned text on all viewport sizes</p>
+    <hr>
+
+    <!-- Text alignment based on screen sizes -->
+    <h6>Text alignment based on screen sizes</h6>
+    <p class="text-sm-center">Text will be aligned center on small sized(sm) viewports and up</p>
+    <p class="text-md-center">Text will be aligned center on medium sized(md) viewports and up</p>
+    <p class="text-lg-center">Text will be aligned center on large sized(lg) viewports and up</p>
+    <hr>
+
+    <!-- Text Formating -->
+    <h6>Text Formating</h6>
+    <p><b>This is a bold text</b></p>
+    <p><code>This is a computer code</code></p>
+    <p><em>This is emphasized text</em></p>
+    <p><i>This is italic text</i></p>
+    <p><mark>This is highlighted text</mark></p>
+    <p><small>This is a small text</small></p>
+    <p><strong>This is a strongly emphasized text</strong></p>
+    <p>This is <sub>subscript</sub> and <sup>superscript</sup></p>
+    <p><ins>This text is inserted to the document</ins></p>
+    <p><del>This text is deleted from the document</del></p>
+    <hr>
+
+    <!-- Text Transformation -->
+    <h6>Text Transformation</h6>
+    <p class="text-lowercase">The quick brown fox jumps over the lazy dog</p>
+    <p class="text-uppercase">The quick brown fox jumps over the lazy dog</p>
+    <p class="text-capitalize">The quick brown fox jumps over the lazy dog</p>
+    <hr>
+
+    <!-- Text Coloring -->
+    <h6>Text Coloring</h6>
+    <p class="text-primary">Primary: Please read the instructions carefully before proceeding</p>
+    <p class="text-secondary">Secondary: This feature has been removed from the latest version</p>
+    <p class="text-success">Success: Your message has been sent succesfully</p>
+    <p class="text-info">Info: You must agree with the terms and conditions to complete
+        sign up process
+    </p>
+    <p class="text-warning">Warning: There was a problem with your network connection</p>
+    <p class="text-danger">Danger: An error has occurred while submitting your data</p>
+    <p class="text-muted">Muted: This paragraph of text is grayed out</p>
+    <hr>
+
+    <!-- Styling blockquotes -->
+    <h6>Styling blockquotes</h6>
+    <blockquote class="blockquote">
+        <p>Imagination is more important than knowledge</p>
+    </blockquote>
+
+    <figure>
+        <blockquote class="blockquote">
+            <p>The world is a dangerous place to live; not because of the people
+                who are evil, but because of the people who don't do anything about it
+            </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">By <cite>Albert Einstein</cite></figcaption>
+    </figure>
+    <hr>
+
+    <!-- Truncating long text -->
+    <h6>Truncating long text</h6>
+    <!-- Block level element -->
+    <div class="row">
+        <div class="col-2 text-truncate">
+            The quick brown fox jumps over the lazy dog
+        </div>
+    </div>
+
+    <!-- inline level element -->
+    <span class="d-inline-block text-truncate" style="max-width: 100px;">
+        The quick brown fox jumps over the lazy dog
+    </span>
+    <hr>
+
+    <!-- Text wrapping and overflow -->
+    <h6>Text wrapping and overflow</h6>
+    <div class="badge bg-primary text-wrap" style="width: 6rem;">
+        This text will wrap
+    </div>
+
+    <div class="bg-warning text-nowrap" style="width: 6rem;">
+    This text will overflow the element's box</div>
+    <hr>
+
+    <!-- Wraping long word-->
+    <h6>Wraping long word</h6>
+    <div class="row">
+        <div class="col-2">
+            <p class="text-break">veryveryveryveryveryveryveryveryveryveryveryveryverylongword</p>
+        </div>
+    </div>
+
+
+
+    
+    </div>
+   <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
