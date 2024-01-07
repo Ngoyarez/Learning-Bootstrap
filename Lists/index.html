@@ -1,0 +1,245 @@
+<!-- 
+   Unordered lists - Order does not explicitly matter
+   Ordered lists - Order explicitly matter.
+   Definition List - A list of terms with their associated descriptions
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container bg-light mt-3">
+       <ul class="list-unstyled">
+        <li>Home</li>
+        <li>Products
+            <ul>
+                <li>Gadgets</li>
+                <li>Accessories</li>
+            </ul>
+        </li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+       </ul>
+       <hr>
+
+
+
+       <!-- Placing ordered and unordered list items inline -->
+       <h6>Placing ordered and unordered list items inline</h6>
+       <ul class="list-inline">
+        <li class="list-inline-item">Home</li>
+        <li class="list-inline-item">Products</li>
+        <li class="list-inline-item">About Us</li>
+        <li class="list-inline-item">Contact</li>
+       </ul>
+       <hr>
+
+       <!-- Creating Horizontal Definition List -->
+       <h6>Creating Horizontal Definition List </h6>
+       <dl class="row w-50">
+        <dt class="col-sm-3">User Agent</dt>
+        <dd class="col-sm-9">An HTML user agent is any device that interprets HTML documents</dd>
+
+        <dt class="col-sm-3 text-wrap">Client Side Scripting</dt>
+        <dd class="col-sm-9">Client side scripting generally refers to the category of computer
+            programs on the web that are executed by the user's web browser.
+        </dd>
+
+        <dt class="col-sm-3">Document Tree</dt>
+        <dd class="col-sm-9">The tree of elements encoded in the source document</dd>
+       </dl>
+       <hr>
+
+       <!-- List Groups -->
+       <h6>List Groups</h6>
+       <ul class="list-group w-50">
+        <li class="list-group-item">Music</li>
+        <li class="list-group-item">Pictures</li>
+        <li class="list-group-item">Documents</li>
+        <li class="list-group-item">Vedios</li>
+       </ul>
+       <hr>
+
+       <!-- Indicate disabled and active items  -->
+       <h6>Indicate Disabled and Active items </h6>
+       <ul class="list-group w-50">
+        <li class="list-group-item active">Music</li>
+        <li class="list-group-item">Pictures</li>
+        <li class="list-group-item">Documents</li>
+        <li class="list-group-item disabled">Vedios</li>
+       </ul>
+       <hr>
+
+         <!-- Edge to edge list groups  -->
+         <h6>Edge to edge list groups </h6>
+         <ul class="list-group list-group-flush w-50">
+          <li class="list-group-item">Music</li>
+          <li class="list-group-item">Pictures</li>
+          <li class="list-group-item">Documents</li>
+          <li class="list-group-item">Vedios</li>
+         </ul>
+
+         <!-- Creating Numbered list groups -->
+        <h6>Creating Numbered list groups</h6>
+        <ul class="list-group  list-group-numbered w-50">
+            <li class="list-group-item">Music</li>
+            <li class="list-group-item">Pictures</li>
+            <li class="list-group-item">Documents</li>
+            <li class="list-group-item">Vedios</li>
+        </ul>
+        <hr>
+
+        <!-- List groups with checkboxes and radios  -->
+       <h6>List groups with checkboxes and radios </h6>
+       <div class="list-group w-50">
+        <label class="list-group-item">
+            <input type="checkbox" class="form-check-input me-1" name="hobbies" id="">Music
+        </label>
+
+        <label class="list-group-item">
+            <input type="checkbox" class="form-check-input me-1" name="hobbies" id="">Travel and Adventure
+        </label>
+
+        <label class="list-group-item">
+            <input type="checkbox" class="form-check-input me-1" name="hobbies" id="">Reading
+        </label>
+       </div>
+
+       <div class="list-group w-50">
+        <label for="" class="list-group-item">
+            <input type="radio" name="gender" id="" class="form-check-input me-1">Male
+        </label>
+
+        <label for="" class="list-group-item">
+            <input type="radio" name="gender" id="" class="form-check-input me-1">Female
+        </label>
+       </div>
+       <hr>
+
+         <!-- List groups with linked items -->
+         <h6>List groups with linked items</h6>
+         <div class="list-group w-50">
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="bi-house-fill"></i> Home
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi-camera-fill"></i> Pictures
+                <span class="badge rounded-pill bg-primary float-end">145</span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi-music-note-beamed"></i> Music
+                <span class="badge rounded-pill bg-primary float-end">50</span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi-film"></i> Vedios
+                <span class="badge rounded-pill bg-primary float-end">8</span>
+            </a>
+         </div>
+         <hr>
+
+         <!-- List Group with custom content -->
+         <h6>List Group with custom content </h6>
+         <div class="list-group w-50">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h4>Asteroid detected near earth</h4>
+                    <small>1 Day Ago</small>
+                </div>
+                <p>Researchers have detected an asteroid of the size of a football field near
+                    earth. This asteroid does not pose any threat to the planet, but it is difficult
+                    to be tracked.
+                </p>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action active">
+                <div class="d-flex w-100 justify-content-between">
+                    <h4>Scientists found massive black hole</h4>
+                    <small>2 Days Ago</small>
+                </div>
+                    <p>Scientists have found an ultra-bright, supermassive black hole at the center
+                        of a distant galaxy, whose mass is about a million times that of our sun.
+                </p>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h4>NASA Launches solar probe</h4>
+                    <small>3 Days Ago</small>
+                </div>
+                    <p>
+                        NASA launched a Parker space probe in 2018 with the mission of making observation
+                        of the outer corona of the sun. It is the first ever mission to "touch" the sun.
+                </p>
+            </a>
+         </div>
+         <hr>
+
+            <!-- List Group with contextual states -->
+            <h6>List Group with contextual states </h6>
+            <div class="list-group w-50">
+                <li class="list-group-item">A simple default list group item</li>
+                <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+                <li class="list-group-item list-group-item-success">A simple success list group item</li>
+                <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                <li class="list-group-item list-group-item-info">A simple info list group item</li>
+                <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                <li class="list-group-item list-group-item-light">A simple light list group item</li>
+                <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+            </div>
+            <br>
+
+            <div class="list-group w-50">
+                <a href="" class="list-group-item list-group-item-action list-group-item-primary">
+                    A simple primary list group item
+                </a>
+
+                <a href="" class="list-group-item list-group-item-action list-group-item-secondary">
+                    A simple secondary list group item
+                </a>
+
+                <a href="" class="list-group-item list-group-item-action list-group-item-success">
+                    A simple success list group item
+                </a>
+
+                <a href="" class="list-group-item list-group-item-action list-group-item-danger">
+                    A simple primary list group item
+                </a>
+
+                <a href="" class="list-group-item list-group-item-action list-group-item-primary">
+                    A simple danger list group item
+                </a>
+
+                <a href="" class="list-group-item list-group-item-action list-group-item-info">
+                    A simple info list group item
+                </a>
+
+                <a href="" class="list-group-item list-group-item-action list-group-item-warning">
+                    A simple warning list group item
+                </a>
+
+                <a href="" class="list-group-item list-group-item-action list-group-item-light">
+                    A simple light list group item
+                </a>
+
+                <a href="" class="list-group-item list-group-item-action list-group-item-dark">
+                    A simple dark list group item
+                </a>
+            </div>
+
+
+
+
+    </div>
+   <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
