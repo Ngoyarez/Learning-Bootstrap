@@ -1,0 +1,105 @@
+<!-- 
+   Unordered lists - Order does not explicitly matter
+   Ordered lists - Order explicitly matter.
+   Definition List - A list of terms with their associated descriptions
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container bg-light mt-3">
+       <form action="" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" name="" id="inputEmail" class="form-control" placeholder="Email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" name="" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="invalid-feedback">Please enter a your password to continue.</div>
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkRemember">
+                <label for="checkRemember" class="form-check-label">Rememeber Me</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign In</button>
+       </form>
+       <hr>
+
+       <script>
+        // Self executing function
+        (function(){
+            'use strict';
+            window.addEventListener('load', function(){
+                // Fetch all the forms we want to apply custom bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+
+                //Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form){
+                    form.addEventListener('submit', function(event){
+                        if(form.checkValidity() === false){
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+       </script>
+
+
+       <!-- Server side validation -->
+       <form action="">
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" name="" id="inputEmail" class="form-control is-valid" 
+           placeholder="Email" value="ngoyarez@gmail.com" required>
+
+            <div class="valid-feedback">Good! Your email address is looks valid</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Password</label>
+            <input type="password" name="" id="inputPassword" class="form-control is-invalid" 
+            placeholder="Password" required>
+
+            <div class="invalid-feedback">Ooops! You have entered an invalid password</div>
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="checkRemember">
+                <label for="checkRemember" class="form-check-label">Remember Me</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign In</button>
+
+
+       </form>
+
+
+
+
+
+
+
+
+    </div>
+   <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
