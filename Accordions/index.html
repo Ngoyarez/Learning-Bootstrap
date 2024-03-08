@@ -1,0 +1,118 @@
+<!-- Accordion is a series of panels stacked on top of each other -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordions</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              type="button"
+              class="accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+            >
+              1. What is HTML?
+            </button>
+          </h2>
+
+          <div
+            id="collapseOne"
+            class="accordion-collapse"
+            data-bs-parent="#myAccordion"
+          >
+            <div class="card-body">
+              <p>
+                HTML stands for Hypertext Markup Language. HTML is the standard
+                markup language for describing the structure of web pages.
+                <a
+                  href="http://www.tutorialrepublic.com/html-tutorial/"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              type="button"
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+            >
+              2. What is Bootstrap?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#myAccordion"
+          >
+            <div class="card-body">
+              <p>
+                Bootstrap is sleek, intuitive, and powerful front-end framework
+                for faster and easier web development. It is a collection of css
+                and HTML conventions.
+                <a
+                  href="http://www.tutorialrepublic.com/twitter-bootstrap--tutorial/"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              type="button"
+              class="accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+            >
+              3. What is CSS?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#myAccordion"
+          >
+            <div class="card-body">
+              <p>
+                CSS stands for Cascading Style Sheets. CSS allows you to
+                specify various style properties for a given HTML element such
+                as colors, backgrounds, fonts, etc.
+                <a
+                  href="http://www.tutorialrepublic.com/css-tutorial/"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Accordions with plus or minus icons -->
+    <h6>Accordions with plus or minus icons</h6>
+    <!-- <style>
+        .accordion-button::after{
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns=http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+        }
+    </style> -->
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
